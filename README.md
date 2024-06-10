@@ -11,10 +11,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -34,16 +31,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](../newsletter-sign-up-with-success-message-main/preview/desktop-design.png)
-![](../newsletter-sign-up-with-success-message-main/preview/error.png)
-![](../newsletter-sign-up-with-success-message-main/preview/success-card.png)
-![](../newsletter-sign-up-with-success-message-main/preview/hover-design.png)
-![](../newsletter-sign-up-with-success-message-main/preview/mobile-design.png)
+![](./preview/desktop-design.png)
+![](./preview/error.png)
+![](./preview/success-card.png)
+![](./preview/hover-design.png)
+![](./preview/mobile-design.png)
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [GitHub]([https://your-solution-url.com](https://github.com/induwara-thisarindu/Newsletter-sign-up-form-with-success-message))
+- Live Site URL: [Live Demo]([https://your-live-site-url.com](https://newsletter-signup-form-wit-error-msg.netlify.app))
 
 ## My process
 
