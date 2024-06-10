@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White-hsl:hsl(0, 0%, 100%);
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body {
+    background: var(--Charcoal-Grey);
+}
+
+.card .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    gap: 2rem;
+    background: var(--White-hsl);
+    width: 900px;
+    border-radius: 20px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card .container.display {
+    display: none;
+}
+
+.card .card-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-left: 30px;
+}
+
+.mobile {
+    display: none;
+}
+
+.card .card-form p {
+    margin-bottom: 15px;
+}
+
+.card .card-form ul{
+    padding: 10px 0px;
+}
+
+.card .card-form ul li {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.card .card-form h1 {
+    font-weight: 700;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.card .card-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-form label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-form label p{
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.card .card-form label #error-msg {
+    color: #FF527B;
+    font-weight: 400;
+}
+
+.card .card-form form input {
+    width: 100%;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--Grey);
+    margin-bottom: 20px;
+}
+
+.error {
+    border: 2px solid red;
+    background: rgb(236, 155, 155);
+}
+
+.card .card-form form .error {
+    border: 2px solid red;
+    background: rgb(236, 155, 155);
+}
+
+.card .card-form form button {
+    padding: 20px;
+    background: var(--Dark-Slate-Grey);
+    color: var(--White-hsl);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Success card */
+
+.success-card .container {
+    display: none;
+    background-color: var(--White-hsl);
+    width: 475px;
+    padding: 50px;
+    margin: 250px auto;
+    border-radius: 20px;
+}
+
+.success-card .container.display-show {
+    display: block;
+}
+
+.success-card .container .icon {
+    width: 100%;
+}
+
+.success-card .container .text h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 3.2rem;
+    margin-bottom: 20px;
+    color: var(--Dark-Slate-Grey);
+}
+
+.success-card .container .text p {
+    color: var(--Charcoal-Grey);
+    margin-bottom: 20px;
+}
+
+.success-card .container .text p span {
+    font-weight: 700;
+    color: var(--Dark-Slate-Grey);
+}
+
+.success-card .container .text button {
+    background: var(--Dark-Slate-Grey);
+    padding: 20px;
+    border: none;
+    display: block;
+    width: 100%;
+    color: var(--White-hsl);
+}
+
+.success-card .container .text button:hover {
+    background: linear-gradient(#FF6A3A, #FF527B);
+}
+
+/* Media queries */
+
+@media (max-width: 900px) {
+    .card .container {
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-bottom: 10px;
+        width: 375px;
+        border-radius: 0;
+    }
+
+    .card .card-form {
+        padding: 20px;
+        width: 350px;
+        text-align: left;
+    }
+
+    .card .card-form h1 {
+        font-size: 40px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 490px) {
+    .success-card .container {
+        width: 350px;
+        margin: 100px auto;
+    }
+
+    .success-card .container .text h1 {
+        font-size: 40px;
+    }
+}
